@@ -1,0 +1,62 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer img{
+    padding: 40px;
+}
+
+/** {
+    border: solid;
+}*/
+
+.header {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu {
+    display: flex;
+    flex-direction: column;
+    border: black
+}
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes mymove{
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(1000px);
+    }
+
+    0% {
+        background-color: lightblue;
+    }
+
+    25% {
+        background-color: red;
+    }
+
+    75% {
+        background-color: black;
+        color: white
+    }
+}
+
+.header h1 {
+    position: relative;
+    animation: mymove 10s infinite;
+    animation-direction: alternate;
+}
